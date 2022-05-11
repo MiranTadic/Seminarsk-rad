@@ -5,27 +5,9 @@ import Input from './components/Input';
 
 function randomName() {
   const adjectives = [
-    "autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark",
-    "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter",
-    "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue",
-    "billowing", "broken", "cold", "damp", "falling", "frosty", "green", "long",
-    "late", "lingering", "bold", "little", "morning", "muddy", "old", "red",
-    "rough", "still", "small", "sparkling", "throbbing", "shy", "wandering",
-    "withered", "wild", "black", "young", "holy", "solitary", "fragrant",
-    "aged", "snowy", "proud", "floral", "restless", "divine", "polished",
-    "ancient", "purple", "lively", "nameless"
+    "eager", "unequaled", "equable", "toothsome", "natural", "late", "womanly", "irate", "voracious", "mute", "heavy", "sable", "nosy", "separate", "fascinated", "infamous", "hushed", "aboard", "murky", "weak", "troubled", "nonchalant", "abandoned", "common", "happy", "sharp", "melodic", "noisy", "lovely", "calm", "defiant", "overt", "full", "dry", "upbeat", "successful", "nappy", "precious", "itchy", "adhesive", "faulty", "strong", "finicky", "unsightly", "fine", "thoughtful", "ready", "draconian", "nonstop", "petite", "nimble", "witty", "vacuous", "attractive", "puzzling", "magnificent", "wandering", "accidental", "combative", "internal", "frequent", "befitting", "thin", "envious"
   ];
-  const nouns = [
-    "waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning",
-    "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter",
-    "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook",
-    "butterfly", "bush", "dew", "dust", "field", "fire", "flower", "firefly",
-    "feather", "grass", "haze", "mountain", "night", "pond", "darkness",
-    "snowflake", "silence", "sound", "sky", "shape", "surf", "thunder",
-    "violet", "water", "wildflower", "wave", "water", "resonance", "sun",
-    "wood", "dream", "cherry", "tree", "fog", "frost", "voice", "paper", "frog",
-    "smoke", "star"
-  ];
+  const nouns = ["quill", "bubble", "horse", "question", "corn", "turkey", "sidewalk", "needle", "week", "chicken", "match", "nut", "shame", "meal", "fruit", "fish", "station", "music", "care", "calendar", "lawyer", "brush", "weight", "goat", "horn", "tent", "tray", "bird", "stem", "lamp", "afterthought", "needle", "nose", "thought", "cake", "trucks", "bat", "underwear", "lumber", "scarecrow", "toes", "title", "glass", "whistle", "sheet", "honey", "surprise", "goose", "care", "brush", "spark", "attraction", "laborer", "mint", "vegetable", "haircut", "family", "lunch", "cow", "motion", "badge", "brake", "cows", "winter"];
   const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
   const noun = nouns[Math.floor(Math.random() * nouns.length)];
   return adjective + noun;
@@ -67,7 +49,7 @@ export default class App extends Component {
 
   render() {
     return (
-
+      
       <div className="App">
         <div className="App-header">
           <h1>Algebra - Seminarski rad Chat App</h1>
