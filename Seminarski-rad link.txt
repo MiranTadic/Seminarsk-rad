@@ -1,0 +1,1 @@
+Seminarski rad je također dostupan na web-adresi: https://github.com/MiranTadic/Seminarski-rad/blob/master/src/App.js

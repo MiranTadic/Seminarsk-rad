@@ -14,11 +14,12 @@ function randomName() {
 }
 
 function randomColor () {
+
   return '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
 }
 
 export default class App extends Component {
-
+  
   state = {
     messages: [],
     member: {
@@ -26,8 +27,15 @@ export default class App extends Component {
       username: randomName()
     }
   }
+
   constructor(){
     super();
+    this.setState({messages: [],
+      member: {
+        color: randomColor(),
+        username: randomName()
+      }})
+
     this.drone = new window.Scaledrone("jg8RR2Lv0W2U7SUD", {
       data: this.state.member
     });
@@ -39,6 +47,8 @@ export default class App extends Component {
       member.id = this.drone.clientId;
       this.setState({member});
     });
+
+    
     const room = this.drone.subscribe("observable-room");
     room.on('data', (data,member)=>{
       const messages = this.state.messages;
@@ -46,10 +56,10 @@ export default class App extends Component {
       this.setState({messages});
     });
   }
+  
 
   render() {
     return (
-      
       <div className="App">
         <div className="App-header">
           <h1>Algebra - Seminarski rad Chat App</h1>
