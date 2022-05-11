@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  background-color: bisque;
 }
 
 .App-header {
@@ -62,14 +63,19 @@
   padding: 10px;
   max-width: 400px;
   margin: 0;
-  border-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   background-color: cornflowerblue;
   color: white;
   display: inline-block;
 }
 
 .currentMember > .Message-content .text {
-  background-color: orangered;
+  background-color: rgb(128, 128, 128);
+  border-top-right-radius: unset;
+  border-bottom-left-radius: unset;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 form {
